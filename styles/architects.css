@@ -22,7 +22,7 @@
   .display-flex{
     display: flex;
   }
-  .navber{
+  .navbar{
     justify-content: space-between;
     align-items: center;
   }
@@ -54,5 +54,18 @@
     font-size: 1.25rem;
     font-weight: 600;
     border-radius: 8px;
-    margin: 40px 0 ;
+    
+  }
+  main{
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .banner-img{
+    width: 100%;
+  }
+  @media screen and(max-width:576px) {
+    .navbar,.nav-links{
+      flex-direction: column;
+    }
   }
