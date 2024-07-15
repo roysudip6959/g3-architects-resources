@@ -11,6 +11,7 @@
   }
 .text-light-gray{
     color: #727272;
+    margin-top: 10px;
 }
 .brand{
     font-weight: 700;
@@ -108,15 +109,24 @@ main>section{
 .fact-description{
   max-width: 540px;
 }
+.sponsers-info{
+  max-width: 540px;
+  margin: 50px auto;
+  text-align: center;
+}
   @media screen and(max-width:576px) {
     .navbar,
     .nav-links
     .teams{
       flex-direction: column;
     }
-    .team-img-container{
+    .team-img-container ,.facts-container{
       display: grid;
       grid-template-columns: repeat(1,1fr);
+    }
+    .facts-container{
+      justify-items: center;
+      gap: 24px;
     }
     .teams{
       flex-direction: column;
